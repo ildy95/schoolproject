@@ -74,19 +74,19 @@ Ezen program tehát összekapcsolja a két felhasználói kört, s segíti a moz
 
 * Vendég és felhasználó:
 
-![alt tag](https://github.com/ildy95/alkfejl_2016_8_mozirendszer/blob/master/pics/bejelentkez%C3%A9s_felhasznal%C3%B3.png)
+![alt tag](https://github.com/ildy95/schoolproject/blob/master/pics/bejelentkez%C3%A9s_felhasznal%C3%B3.png)
 
-![alt tag](https://github.com/ildy95/alkfejl_2016_8_mozirendszer/blob/master/pics/adatok_modositasa.png)
+![alt tag](https://github.com/ildy95/schoolproject/blob/master/pics/adatok_modositasa.png)
 
-![alt tag](https://github.com/ildy95/alkfejl_2016_8_mozirendszer/blob/master/pics/jegyfoglal%C3%A1s.png)
+![alt tag](https://github.com/ildy95/schoolproject/blob/master/pics/jegyfoglal%C3%A1s.png)
 
-![alt tag](https://github.com/ildy95/alkfejl_2016_8_mozirendszer/blob/master/pics/foglal%C3%A1s%20visszamond%C3%A1sa.png)
+![alt tag](https://github.com/ildy95/schoolproject/blob/master/pics/foglal%C3%A1s%20visszamond%C3%A1sa.png)
 
 * Alkalmazott:
 
-![alt tag](https://github.com/ildy95/alkfejl_2016_8_mozirendszer/blob/master/pics/bejelentkez%C3%A9s_admin.png)
+![alt tag](https://github.com/ildy95/schoolproject/blob/master/pics/bejelentkez%C3%A9s_admin.png)
 
-![alt tag](https://github.com/ildy95/alkfejl_2016_8_mozirendszer/blob/master/pics/%C3%BAj%20film%20hozz%C3%A1ad%C3%A1sa.png)
+![alt tag](https://github.com/ildy95/schoolproject/blob/master/pics/%C3%BAj%20film%20hozz%C3%A1ad%C3%A1sa.png)
 
 
 
@@ -136,15 +136,15 @@ Az alábbi linken megtekinthető: https://app.moqups.com/ildy95/sLaWCR8v1S/view/
 
 ## Adatmodell
 
-![alt tag](https://github.com/ildy95/alkfejl_2016_8_mozirendszer/blob/master/pics/adatmodell.png)
+![alt tag](https://github.com/ildy95/schoolproject/blob/master/pics/adatmodell.png)
 
 ## Adatbázisterv
 
-![alt tag](https://github.com/ildy95/alkfejl_2016_8_mozirendszer/blob/master/pics/Adatbazism.png)
+![alt tag](https://github.com/ildy95/schoolproject/blob/master/pics/Adatbazism.png)
 
 ## Állapotdiagram
 
-![alt tag](https://github.com/ildy95/alkfejl_2016_8_mozirendszer/blob/master/pics/regisztr%C3%A1ci%C3%B3%20visszaigazol%C3%A1ssal.png)
+![alt tag](https://github.com/ildy95/schoolproject/blob/master/pics/regisztr%C3%A1ci%C3%B3%20visszaigazol%C3%A1ssal.png)
 
 
 
