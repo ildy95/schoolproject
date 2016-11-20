@@ -1,0 +1,72 @@
+{% extends 'master' %}
+
+{% block title %}Előadás hirdetése{% endblock %}
+{% block content %}
+  <h1>Előadás hirdetése</h1>
+  {% if old('errors') %}
+  <div class="alert alert-danger" role="alert">Nem sikerült létrehozni a filmet:
+    <ul>
+      {% for error in old('errors') %}
+      <li>{{ error.message }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  <div class="row" onload="betoltHelyek()">
+    <div class="col-md-6 col-md-offset-3">
+      <form class="form-horizontal" action="{{ 'do_eloadas_create' | route }}" method="POST" enctype="multipart/form-data">
+        {{ csrfField }}
+        
+        <div class="container">
+            <div class="form-group">
+                <label for="dtp_input1" class="col-md-2 control-label">Előadás ideje</label>
+                <div id = "datetimepicker5" class="input-group date form_datetime col-md-5" data-link-field="dtp_input1">
+                    <input class="form-control" name="ido" placeholder="Idő" size="16" type="text" id="date-daily" value="{{ old('ido') }}" readonly>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                </div>
+               <script type="text/javascript">
+                  $(function () {
+                      $('#datetimepicker5').datetimepicker({
+                          locale: 'hu'
+                      });
+                  });
+              </script> 
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputTerem" class="col-sm-4 control-label">Terem</label>
+          <div class="col-sm-8">
+          <select class="form-control" id="inputTerem" name="terem" placeholder="Hossz" value="{{ old('terem') }}">
+            <option> 1</option>
+            <option> 2 </option>
+            <option> 3 </option>
+            <option> 4 </option>
+            <option> 5 </option>
+          </select>
+            
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputFilm" class="col-sm-4 control-label">Film</label>
+          <div class="col-sm-8">
+          <select multiple="" class="form-control" id="inputFilm" name="film_id" placeholder="Film"}}">
+           {% for film in films %}
+            <option> {{ film.id }}. {{ film.cim }} </option>
+            {% endfor %}
+          </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-4 col-sm-8">
+            <button type="submit" class="btn btn-success">Film beküldése</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+
+

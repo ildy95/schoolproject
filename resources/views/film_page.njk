@@ -1,0 +1,23 @@
+{% extends 'master' %}
+
+{% block title %}{{ film.cim }}{% endblock %}
+{% block content %}
+  <h1>{{ film.cim }}</h1>  
+  {% if currentUser.admin == 1 %}
+  <li><a href="{{ 'film_edit' | route({id: film.id}) }}">Film szerkesztése</a></li>
+  <li><a href="{{ 'film_delete' | route({id: film.id}) }}">Film törlése</a></li>
+  {% endif %}
+  {% if recipeImage %}
+  <img src="{{ recipeImage }}">
+  {% endif %}
+    <h3>Műfaj</h3>
+    <p>{{ film.mufaj }}</p>
+    <h3>Hossz</h3>
+    <p>{{ film.hossz }}</p>
+    <h3>Korhatár</h3>
+    <p>{{ film.korhatar }}</p>
+    <h3>Rendező</h3>
+    <p>{{ film.rendezo }}</p>
+    <h3>Leírás</h3>
+    <p>{{ film.leiras }}</p>
+{% endblock %}

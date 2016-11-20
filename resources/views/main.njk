@@ -1,0 +1,30 @@
+{% extends 'master' %}
+
+{% block title %}Kezdőlap{% endblock %}
+{% block content %}
+  <form action="{{ 'recipe_list' | route }}" method="GET">
+    <div class="input-group search-box">
+      <input type="text" class="form-control" placeholder="Keresés..." name="recipeName">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="submit">Mehet!</button>
+      </span>
+    </div>
+  </form>
+  
+ {% for filmBatch in films | batch(3) %}
+  <div class="row">
+    {% for film in filmBatch %}
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <a href="{{ 'film_page' | route({id: film.id}) }}" class="list-group-item">{{ film.cim }}</a> 
+        </div>
+        {% if recipeImage %}
+          <img src="{{ recipeImage }}">
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+{% endblock %}
